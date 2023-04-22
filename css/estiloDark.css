@@ -1,0 +1,76 @@
+body {
+    background-color: #254902;
+}
+.titulo {
+    color: #fff;
+}
+.tema i {
+    color: #fff;
+}
+.Temacambiando {
+    color: #fff;
+}
+.buscar {
+    background-color: #00030a;
+    box-shadow: 3px 2px 5px 2px rgba(0, 0, 0, .5);
+}
+.formInput {
+    color: white;
+}
+.formIcon {
+    color: #0078fe;
+}
+.formIcon:hover {
+    color: #0066da;
+    transition: all 500ms;
+}
+.resultado {
+    background-color: #00030a;
+    box-shadow: 3px 2px 5px 2px rgba(0, 0, 0, .5);
+}
+.bio {
+    color: lightgray;
+}
+.stats {
+    background-color: #254902;
+}
+.stats > small {
+    color: lightgray;
+}
+.link {
+    color: lightgray;
+}
+.link i {
+    color: white;
+}
+
+.repos {
+    margin-top: 40px;
+}
+
+.repos h3 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.rep-single {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.rep-single a {
+    background-color: rgba(138, 137, 137, 0.301);
+    width: max-content;
+    text-decoration: none;
+    text-align: center;
+    padding: 3px 10px;
+    border-radius: 12px;
+    color: white;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.autor {
+    color: white !important;
+}

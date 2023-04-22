@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'sans-serif', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.main {
+    max-width: 70vw;
+    min-width: 320px;
+    min-height: 20rem;
+}
+
+.header {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+.tema {
+    font-size: .8rem;
+}
+
+.tema i {
+    margin-left: .5rem;
+}
+
+.Temacambiando {
+    text-decoration: none;
+}
+
+.Temanombre {
+    letter-spacing: 3px;
+}
+
+.buscar {
+    padding: .5rem .5rem .5rem .1rem;
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formInput {
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    outline: none;
+    color: white;
+}
+
+.formIcon {
+    font-size: 1.2rem;
+    position: relative;
+    left: 8px;
+}
+
+.formBoton {
+    font-family: 'sans-serif', monospace;
+    background-color: #254902;
+    border: none;
+    padding: .6rem;
+    color: #fff;
+    border-radius: .3rem;
+    font-size: .5;
+    cursor: pointer;
+}
+
+.formBoton:hover {
+    background-color: #0066da;
+    transition: all 500ms;
+}
+
+.resultado {
+    padding: 2rem;
+    border-radius: .5rem;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 2fr 2fr;
+    gap: .5rem 1rem;
+    grid-template-areas:
+        "avatar name joined"
+        "avatar username username"
+        "avatar bio bio"
+        "avatar stats stats"
+        "avatar contact contact"
+    ;
+}
+
+.espera,
+.not-found {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    width: 100%;
+}
+
+.avatar {
+    width: 150px;
+    border-radius: 50%;
+    grid-area: avatar;
+    justify-self: center;
+}
+
+.nombre {
+    grid-area: name;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.unido {
+    grid-area: joined;
+    font-size: 1rem;
+    margin: 0;
+    justify-self: end;
+}
+
+.username {
+    grid-area: username;
+    font-weight: normal;
+    margin: 0;
+    /*color: #0078fe;*/
+}
+
+.bio {
+    grid-area: bio;
+    margin: 0;
+    font-size: .7rem;
+}
+
+.stats {
+    grid-area: stats;
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5rem 1rem;
+    justify-content: space-around;
+    border-radius: 1rem;
+    margin: 1rem 0;
+}
+
+.stats>p {
+    margin: 0;
+    font-size: .8rem;
+    flex-basis: 33%
+}
+
+.stats>small {
+    margin: 0;
+    font-size: 1rem;
+    flex-basis: 33%;
+}
+
+.contacto {
+    grid-area: contact;
+    display: grid;
+    gap: .5rem;
+    grid: 1fr 1fr / 1fr 1fr;
+}
+
+.link {
+    text-decoration: none;
+    font-size: .7rem;
+}
+
+.link i {
+    margin-right: .3rem;
+}
+
+@media screen and (max-width: 600px) {
+
+    .titulo {
+        font-size: 0.85rem;
+    }
+
+    .resultado {
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+            "avatar name"
+            "avatar username"
+            "avatar joined"
+            "bio bio"
+            "stats stats"
+            "contact contact"
+        ;
+        display: none;
+    }
+
+    .stats>p {
+        margin: 0;
+        font-size: .6rem;
+        flex-basis: 33%
+    }
+
+    .avatar,
+    .unido {
+        justify-self: start;
+    }
+
+    .bio {
+        margin-top: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+
+    .contacto {
+        grid-template-rows: auto;
+        grid-row-gap: 1rem;
+        grid-template-columns: 1fr;
+        display: none;
+    }
+
+}
+
+.repos {
+    margin-top: 40px;
+}
+
+.repos h3 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.rep-single {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.rep-single a {
+    background-color: rgba(138, 137, 137, 0.301);
+    width: max-content;
+    text-decoration: none;
+    text-align: center;
+    padding: 3px 10px;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.imgredu {
+
+    width: 70px;
+    border-radius: 50%;
+    grid-area: avatar;
+    justify-self: center;
+}

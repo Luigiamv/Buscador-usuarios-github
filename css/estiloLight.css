@@ -1,0 +1,95 @@
+/* Dark theme custom styles */
+body {
+    background-color: #e8f9f7;
+}
+
+.titulo {
+    color: #000;
+}
+
+.tema i {
+    color: #474747;
+}
+
+.Temacambiando {
+    color: #474747;
+}
+
+.buscar {
+    background-color: white;
+    box-shadow: 3px 2px 5px 2px lightgray;
+}
+
+::placeholder {
+    color: #474747;
+}
+
+.formInput {
+    color: #474747;
+}
+
+.formIcon {
+    color: #0078fe;
+}
+
+.resultado {
+    background-color: white;
+    box-shadow: 3px 2px 5px 2px lightgray;
+}
+
+.nombre,
+.unido,
+.username {
+    color: black;
+}
+
+.bio {
+    color: black;
+}
+
+.stats {
+    background-color: #e8f9f7;
+}
+
+.stats>* {
+    color: black;
+}
+
+.link {
+    color: black;
+}
+
+.link i {
+    color: black;
+}
+
+.repos {
+    margin-top: 40px;
+}
+
+.repos h3 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.rep-single {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.rep-single a {
+    background-color: rgba(138, 137, 137, 0.301);
+    width: max-content;
+    text-decoration: none;
+    text-align: center;
+    padding: 3px 10px;
+    border-radius: 12px;
+    color: black;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.autor {
+    color: black !important;
+}
